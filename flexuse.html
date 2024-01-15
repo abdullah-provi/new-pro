@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex use</title>
     <script src="https://kit.fontawesome.com/5319acd44d.js" crossorigin="anonymous"></script>
     <style>
-        .login-container{
+        .login-container {
             display: flex;
             justify-content: center;
         }
-        .login-form{
+
+        .login-form {
             display: flex;
             flex-direction: column;
         }
-        .login-form input,button{
+
+        .login-form input,
+        button {
             font-size: 1.3em;
             margin-top: 15px;
             border: 1px solid lightgray;
             padding-left: 10px;
             border-radius: 5px;
         }
-        .login-form button{
+
+        .login-form button {
             background-color: chocolate;
             font-weight: 700px;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-between;
         }
-        nav a{
+
+        nav a {
             text-decoration: none;
             color: black;
             font-size: 1.5em;
             margin-right: 15px;
         }
-        
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-           <span>
-            <a href="">home</a>
-            <a href="">products</a>
-            <a href="">contact</a>
-            <a href="">about us</a>
-           </span>
-           <span>
-            <a href=""><i class="fa-solid fa-user"></i></a>
-            <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
-           </span>
+            <span>
+                <a href="">home</a>
+                <a href="">products</a>
+                <a href="">contact</a>
+                <a href="">about us</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
         </nav>
     </header>
-    <section class="login-container">
-     <form action="" class="login-form">
-        <h1>login</h1>
-        <input type="email" name="email" placeholder="your email" id="" required>
-        <input type="password" name="password" placeholder="your password" id="" required>
-        <button type="submit">login</button>
-     </form>
-    </section>
 
-    <h1> Imrans Commit</h1>
+    <section class="login-container">
+        <form action="" class="login-form">
+           <h1>login</h1>
+           <input type="email" name="email" placeholder="your email" id="" required>
+           <input type="password" name="password" placeholder="your password" id="" required>
+           <button type="submit">login</button>
+        </form>
+       </section>
+
+
 </body>
+
 </html>
