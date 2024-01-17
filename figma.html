@@ -20,13 +20,21 @@
             width: 870PX;
             padding: 30px;
         }
+        hr{
+            border: 1px solid #d1d1d1;
+        }
+        .top-players{
+            margin-bottom: 30px;
+        }
         .section-title{
             color: #562fff;
             font-size: 24px;
+            margin-top: 3px;
         }
         .players{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 30px;
         }
         .player{
             display: flex;
@@ -38,7 +46,36 @@
         }
        .player-name{
         margin-left: 16px;
+        font-size: 18px;
        }
+
+        /* top blog styles */
+        
+      .blog{
+        display: flex;
+
+        }
+       .blog  img{
+        width: 177px;
+        height: 117px;
+       }
+        .blog-info{
+            margin-left: 16px;
+        }
+       .blog-title{
+        font-size: 20px;
+       }
+       .blog-author{
+        color: #9f9f9f;
+        font-size: 16px;
+
+       }
+       .blog-author a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #562EFF;
+       }
+
     </style>
 </head>
 <body>
@@ -76,6 +113,22 @@
                     <h3 class="player-name">Top Player-6</h3>
                 </div>
             </div>
+        </div>
+        <hr>
+        <div class="top-blogs">
+            <h2 class="section-title">top blogs</h2>
+            <div class="blog">
+                <article class="blog">
+                    <div class="thumbnail">
+                        <img src="y.jpg" alt="">
+                    </div>
+                    <div class="blog-info">
+                        <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
+                        <p class="blog-author">By <a href="">danny sapio</a></p>
+                    
+                </article>
+            </div>
+
         </div>
      </section>
     </main>
