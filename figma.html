@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>leader board</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f1ff ;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            background-color: #FFFFFF ;
+            width: 870PX;
+            padding: 30px;
+        }
+        .section-title{
+            color: #562fff;
+            font-size: 24px;
+        }
         .players{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -17,6 +36,9 @@
             width: 56px;
             height: 56px;
         }
+       .player-name{
+        margin-left: 16px;
+       }
     </style>
 </head>
 <body>
@@ -25,32 +47,33 @@
     </header>
     
     <main>
-     <section>
+     <section class="container">
         <div class="top-players">
+            <h2 class="section-title">Top players</h2>
             <div class="players">
                 <div class="player">
                     <img src="bluesea (1).jpg" alt="">
-                    <h3>top player-1</h3>
+                    <h3 class="player-name">Top Player-1</h3>
                 </div>
                 <div class="player">
                     <img src="bluesea (1).jpg" alt="">
-                    <h3>top player-2</h3>
+                    <h3 class="player-name">Top Player-2</h3>
                 </div>
                 <div class="player">
                     <img src="bluesea (1).jpg" alt="">
-                    <h3>top player-3</h3>
+                    <h3 class="player-name">Top Player-3</h3>
                 </div>
                 <div class="player">
                     <img src="bluesea (1).jpg" alt="">
-                    <h3>top player-4</h3>
+                    <h3 class="player-name">Top Player-4</h3>
                 </div>
                 <div class="player">
                     <img src="bluesea (1).jpg" alt="">
-                    <h3>top player-5</h3>
+                    <h3 class="player-name">Top Player-5</h3>
                 </div>
                 <div class="player">
                     <img src="bluesea (1).jpg" alt="">
-                    <h3>top player-6</h3>
+                    <h3 class="player-name">Top Player-6</h3>
                 </div>
             </div>
         </div>
