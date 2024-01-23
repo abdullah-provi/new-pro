@@ -1,183 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>leader board</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5319acd44d.js" crossorigin="anonymous"></script>
+
+    <!-- style -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-        body{
+        body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f3f1ff ;
+            background-color: #f3f1ff;
         }
-        main{
+
+        main {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .container{
-            background-color: #FFFFFF ;
+
+        .container {
+            background-color: #FFFFFF;
             width: 870PX;
             padding: 30px;
             border-radius: 5px;
             margin-top: 21px;
         }
-        hr{
+
+        hr {
             border: 1px solid #d1d1d1;
             margin-bottom: 27px;
         }
-        .top-players{
+
+        .top-players {
             margin-bottom: 30px;
         }
-        .section-title{
+
+        .section-title {
             color: #562fff;
             font-size: 24px;
             margin-top: 3px;
         }
-        .players{
+
+        .players {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-row-gap: 30px;
         }
-        .player{
+
+        .player {
             display: flex;
             align-items: center;
         }
-        .players img{
+
+        .players img {
             width: 56px;
             height: 56px;
         }
-       .player-name{
-        margin-left: 16px;
-        font-size: 18px;
-       }
+
+        .player-name {
+            margin-left: 16px;
+            font-size: 18px;
+        }
 
         /* top blog styles */
-        
-      .blogs {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap:26px ;
-       }
-       .blog{
 
-        display: flex;
+        .blogs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 26px;
+        }
 
-       }
-       .blog  img{
-        width: 177px;
-        height: 117px;
-       }
-        .blog-info{
+        .blog {
+
+            display: flex;
+
+        }
+
+        .blog img {
+            width: 177px;
+            height: 117px;
+
+        }
+
+        .blog-info {
             margin-left: 16px;
         }
-       .blog-title{
-        font-size: 20px;
-       }
-       .blog-author{
-        color: #9f9f9f;
-        font-size: 16px;
 
-       }
-       .blog-author a{
-        text-decoration: none;
-        font-size: 16px;
-        color: #562EFF;
-       }
+        .blog-title {
+            font-size: 20px;
+        }
+
+        .blog-author {
+            color: #9f9f9f;
+            font-size: 16px;
+
+        }
+
+        .blog-author a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #562EFF;
+        }
+
+        /* courses-style */
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 24px;
+        }
+
+        .course .course-banner img {
+            width: 224px;
+            height: 104px;
+
+        }
+
+        .course-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .fa-star {
+            font-size: 12px;
+        }
+
+        .fa-star.filled {
+            color: #ffc014;
+        }
+
+        .fa-star.empty {
+            color: #aeaeae;
+        }
+
+        
+ /* media querise */
+
+ /* mobile devices */
+
+    @media only screen and (max-width: 688px) {
+        .container{
+            width: 100%;
+        }
+        .players{
+            background-color: red;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+
 
     </style>
 </head>
+
 <body>
     <header>
 
     </header>
-    
+
     <main>
-     <section class="container">
-        <div class="top-players">
-            <h2 class="section-title">Top players</h2>
-            <div class="players">
-                <div class="player">
-                    <img src="bluesea (1).jpg" alt="">
-                    <h3 class="player-name">Top Player-1</h3>
-                </div>
-                <div class="player">
-                    <img src="bluesea (1).jpg" alt="">
-                    <h3 class="player-name">Top Player-2</h3>
-                </div>
-                <div class="player">
-                    <img src="bluesea (1).jpg" alt="">
-                    <h3 class="player-name">Top Player-3</h3>
-                </div>
-                <div class="player">
-                    <img src="bluesea (1).jpg" alt="">
-                    <h3 class="player-name">Top Player-4</h3>
-                </div>
-                <div class="player">
-                    <img src="bluesea (1).jpg" alt="">
-                    <h3 class="player-name">Top Player-5</h3>
-                </div>
-                <div class="player">
-                    <img src="bluesea (1).jpg" alt="">
-                    <h3 class="player-name">Top Player-6</h3>
+        <section class="container">
+            <div class="top-players">
+                <h2 class="section-title">Top players</h2>
+                <div class="players">
+                    <div class="player">
+                        <img src="bluesea (1).jpg" alt="">
+                        <h3 class="player-name">top-players-1</h3>
+                    </div>
+                    <div class="player">
+                        <img src="bluesea (1).jpg" alt="">
+                        <h3 class="player-name">top-players-2</h3>
+                    </div>
+                    <div class="player">
+                        <img src="bluesea (1).jpg" alt="">
+                        <h3 class="player-name">top-players-3</h3>
+                    </div>
+                    <div class="player">
+                        <img src="bluesea (1).jpg" alt="">
+                        <h3 class="player-name">top-players-4</h3>
+                    </div>
+                    <div class="player">
+                        <img src="bluesea (1).jpg" alt="">
+                        <h3 class="player-name">top-players-5</h3>
+                    </div>
+                    <div class="player">
+                        <img src="bluesea (1).jpg" alt="">
+                        <h3 class="player-name">top-players-6</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="top-blogs">
-            <h2 class="section-title">top blogs</h2>
-            <div class="blogs">
-                <article class="blog">
-                    <div class="thumbnail">
-                        <img src="new1.jpg" alt="">
+            <hr>
+            <!-- top-blogs -->
+            <div class="top-blogs">
+                <h2 class="section-title">top blogs</h2>
+                <div class="blogs">
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="new1.jpg" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
+                            <p class="blog-author">By <a href="">danny sapio</a></p>
+                        </div>
+
+                    </article>
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="new2.jpg" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
+                            <p class="blog-author">By <a href="">danny sapio</a></p>
+                        </div>
+
+                    </article>
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="new3.jpg" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
+                            <p class="blog-author">By <a href="">danny sapio</a></p>
+                        </div>
+
+                    </article>
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="new2.jpg" alt="">
+                        </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
+                            <p class="blog-author">By <a href="">danny sapio</a></p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- latest courses -->
+        <section class="container">
+            <h2 class="section-title">latest courses</h2>
+            <div class="courses">
+                <div class="course">
+                    <div class="course-banner">
+                        <img src="y.jpg" alt="">
                     </div>
-                    <div class="blog-info">
-                        <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
-                        <p class="blog-author">By <a href="">danny sapio</a></p>
+                    <div class="course-detail">
+                        <h3 class="course-title">React - The Complate Guide 2022</h3>
+                        <p class="course-author"> Reed Krakoff</p>
+                        <div class="course-info">
+                            <div>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star empty"></i>
+                                <span>4.5</span>
+                            </div>
+
+                            <div class="course-duration">
+                                <i class="fa-regular fa-clock"></i>
+                                1:30hr
+                            </div>
+                        </div>
                     </div>
-                    
-                </article>
-                <article class="blog">
-                    <div class="thumbnail">
-                        <img src="new2.jpg" alt="">
+                </div>
+                <div class="course">
+                    <div class="course-banner">
+                        <img src="y.jpg" alt="">
                     </div>
-                    <div class="blog-info">
-                        <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
-                        <p class="blog-author">By <a href="">danny sapio</a></p>
+                    <div class="course-detail">
+                        <h3 class="course-title">React - The Complate Guide 2022</h3>
+                        <p class="course-author"> Reed Krakoff</p>
+                        <div class="course-info">
+                            <div>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star empty"></i>
+                                <span>4.5</span>
+                            </div>
+
+                            <div class="course-duration">
+                                <i class="fa-regular fa-clock"></i>
+                                1:30hr
+                            </div>
+                        </div>
                     </div>
-                    
-                </article>
-                <article class="blog">
-                    <div class="thumbnail">
-                        <img src="new3.jpg" alt="">
+                </div>
+                <div class="course">
+                    <div class="course-banner">
+                        <img src="y.jpg" alt="">
                     </div>
-                    <div class="blog-info">
-                        <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
-                        <p class="blog-author">By <a href="">danny sapio</a></p>
+                    <div class="course-detail">
+                        <h3 class="course-title">React - The Complate Guide 2022</h3>
+                        <p class="course-author"> Reed Krakoff</p>
+                        <div class="course-info">
+                            <div>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star filled"></i>
+                                <i class="fa-solid fa-star empty"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="course-duration">
+                                <i class="fa-regular fa-clock"></i>
+                                1:30hr
+                            </div>
+                        </div>
                     </div>
-                    
-                </article>
-                <article class="blog">
-                    <div class="thumbnail">
-                        <img src="new2.jpg" alt="">
-                    </div>
-                    <div class="blog-info">
-                        <h3 class="blog-title">13 of my favorite ui/ux goodies</h3>
-                        <p class="blog-author">By <a href="">danny sapio</a></p>
-                    </div>
-                    
-                </article>
-              
+                </div>
+            </div>
             </div>
 
-        </div>
-     </section>
 
-       <!-- latest courses -->
-       <section class="container">
-        <h2 class="section-title">latest courses</h2>
-       </section>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
